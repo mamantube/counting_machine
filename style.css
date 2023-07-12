@@ -19,7 +19,7 @@ body {
     width: 100%;
     border-radius: 12px;
     padding: 10px 20px 20px;
-    background: #fff;
+    background: white;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -39,15 +39,27 @@ body {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(4, 1fr);
+
 }
 
 .buttons button {
     padding: 10px;
-    border-radius: 6px;
+    border-radius: 30px;
     border: none;
     font-size: 20px;
     cursor: pointer;
     background-color: #eee;
+    background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
+    border: 1px solid #8f9092;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    font-weight: 600;
+    text-shadow: 0 1px #fff;
+    
+}
+
+.buttons button:hover {
+    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
 }
 
 .buttons button:active {
